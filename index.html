@@ -11,29 +11,29 @@
 <div class="container">
     <div class="wrapper">
         <div class="text-input">
-            <textarea class="from-text" placeholder="Enter text"></textarea>
-            <textarea class="to-text" placeholder="Translation" readonly disabled></textarea>
+            <textarea class="from-text" id="fromText" placeholder="Enter text" lang="en"></textarea>
+            <textarea class="to-text" id="toText" placeholder="Translation" readonly lang="hi"></textarea>
         </div>
         <ul class="controls">
             <li class="row from">
                 <div class="icons">
-                    <i class="fas fa-volume-up"></i>
-                    <i class="fas fa-copy"></i>
+                    <i class="fas fa-volume-up" title="Listen"></i>
+                    <i class="fas fa-copy" title="Copy"></i>
                 </div>
-                <select>
+                <select id="fromLanguage">
                     <option value="en-US">English</option>
                     <option value="hi-IN">Hindi</option>
                 </select>
             </li>
-            <li class="exchange"><i class="fas fa-exchange-alt"></i></li>
+            <li class="exchange"><i class="fas fa-exchange-alt" title="Swap Languages"></i></li>
             <li class="row to">
-                <select>
+                <select id="toLanguage">
                     <option value="hi-IN">Hindi</option>
                     <option value="en-US">English</option>
                 </select>
                 <div class="icons">
-                    <i class="fas fa-volume-up"></i>
-                    <i class="fas fa-copy"></i>
+                    <i class="fas fa-volume-up" title="Listen"></i>
+                    <i class="fas fa-copy" title="Copy"></i>
                 </div>
             </li>
         </ul>
